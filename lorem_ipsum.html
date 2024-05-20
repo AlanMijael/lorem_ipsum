@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Lorem Ipsum</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .lore-form {
+            margin-bottom: 20px;
+        }
+
+        .lore-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2>Generador de Lorem Ipsum</h2>
+        <form class="lore-form">
+            <label for="amount">Párrafos:</label>
+            <input type="number" name="amount" id="amount" placeholder="5">
+            <button type="submit">Generar</button>
+        </form>
+        <article class="lore-text"></article>
+    </section>
+    <script src="lorem_ipsum.js"></script>
+</body>
+</html>
